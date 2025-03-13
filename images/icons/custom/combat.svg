@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="combatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#combatGradient)" d="M14.5,17.5L19,22L22,19L17.5,14.5L22,10L20,8L15.5,12.5L11,8L9,10L13.5,14.5L9,19L11,21L15.5,16.5L14.5,17.5M6,2H18A2,2 0 0,1 20,4V13.09C19.67,13.04 19.34,13 19,13C18.66,13 18.33,13.04 18,13.09V4H6V20H13.35C13.61,20.75 13.97,21.46 14.44,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2Z" />
+</svg> 

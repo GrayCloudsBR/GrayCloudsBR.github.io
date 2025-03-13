@@ -1,0 +1,89 @@
+/* Pricing Toggle Styles */
+.pricing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 280px;
+  position: relative;
+}
+
+.pricing-toggle-option {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  color: #AAAAAA;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease;
+  flex: 1;
+  z-index: 1;
+}
+
+.pricing-toggle-option:first-child {
+  border-radius: 30px 0 0 30px;
+  border-right: none;
+}
+
+.pricing-toggle-option:last-child {
+  border-radius: 0 30px 30px 0;
+  border-left: none;
+}
+
+.pricing-toggle-option.active {
+  background-color: #00FFFF;
+  color: #050505;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.pricing-save {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  background: linear-gradient(135deg, #FF3366, #FF9933);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+  animation: savePulse 2s infinite, saveWiggle 5s infinite;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform-origin: center;
+}
+
+@keyframes savePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 51, 102, 0.8), 0 0 30px rgba(255, 153, 51, 0.4);
+  }
+}
+
+@keyframes saveWiggle {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  85% {
+    transform: rotate(0deg) scale(1);
+  }
+  90% {
+    transform: rotate(-5deg) scale(1.2);
+  }
+  95% {
+    transform: rotate(5deg) scale(1.2);
+  }
+  97.5% {
+    transform: rotate(-3deg) scale(1.2);
+  }
+} 
